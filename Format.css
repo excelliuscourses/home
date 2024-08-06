@@ -1,4 +1,8 @@
 /* styles.css */
+*{
+    margin: 0;
+    font-style: bold;
+    }
 
 /* Estilos globales */
 body {
