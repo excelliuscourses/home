@@ -21,19 +21,20 @@ body {
 header {
     background-color: #004d00; /* Verde oscuro */
     color: #fff;
-    padding: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Alinea el logo a la izquierda y el nav a la derecha */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
-    width: 75px; /* Ajusta el ancho del logo a 200px */
+    width: 75px; /* Ajusta el ancho del logo a 75px */
     height: auto; /* Mantiene la proporción original del logo */
 }
 
 nav {
-    float: right;
+    display: flex;
 }
 
 nav ul {
@@ -168,6 +169,11 @@ footer p {
 
 /* Responsividad */
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
     nav ul {
         flex-direction: column;
         align-items: center;
