@@ -27,11 +27,14 @@ header {
     color: #fff;
     padding: 20px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header .logo {
-    height: 50px;
-    vertical-align: middle;
+    height: auto;
+    width: 200px;
 }
 
 nav {
