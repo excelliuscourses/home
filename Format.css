@@ -23,20 +23,19 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Espacio entre el logo y la navegación */
-    height: 100px; /* Ajustamos la altura del encabezado */
-    position: relative;
+    justify-content: space-between;
+    height: 100px;
 }
 
 header .logo {
-    width: 75px; /* Ajusta el ancho del logo */
-    height: auto; /* Mantiene la proporción original del logo */
+    width: 75px;
+    height: auto;
 }
 
 nav {
     flex: 1;
     display: flex;
-    justify-content: right; /* Centra los elementos de navegación */
+    justify-content: flex-end;
 }
 
 nav ul {
@@ -69,7 +68,7 @@ nav ul li a:hover {
     text-align: center;
     padding: 60px 20px;
     position: relative;
-    height: 25vh; /* Ajustamos la altura a un cuarto de la pantalla */
+    height: 25vh;
 }
 
 .hero::before {
@@ -79,7 +78,7 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Añadimos un overlay para mejor legibilidad */
+    background: rgba(0, 0, 0, 0.5);
     z-index: 0;
 }
 
@@ -110,8 +109,14 @@ nav ul li a:hover {
     font-size: 2.5em;
 }
 
+.course-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 .course {
-    position: relative;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -119,7 +124,6 @@ nav ul li a:hover {
     margin: 20px auto;
     max-width: 800px;
     transition: transform 0.3s, box-shadow 0.3s;
-    padding-bottom: 80px;
 }
 
 .course:hover {
@@ -162,10 +166,10 @@ nav ul li a:hover {
 }
 
 .social-logo {
-    width: 75px; /* Ajusta el tamaño del logo según sea necesario */
-    height: auto; /* Mantiene la proporción del logo */
-    vertical-align: middle; /* Alinea verticalmente el logo con el texto */
-    margin: 0 5px; /* Espacio entre los logos */
+    width: 75px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 5px;
 }
 
 .contact p {
@@ -175,23 +179,21 @@ nav ul li a:hover {
 /* Estilos para los botones de acceso a los cursos */
 .btn-access {
     display: inline-block;
-    background-color: #004d00; /* Verde oscuro */
+    background-color: #004d00;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    padding: 10px 20px; /* Padding para separar el texto del borde del botón */
-    border-radius: 5px; /* Bordes redondeados para un estilo más moderno */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para hacer el botón más visible */
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s, box-shadow 0.3s;
-    position: absolute;
-    bottom: 20px; /* Espacio desde la parte inferior */
-    right: 20px; /* Espacio desde el borde derecho */
-    z-index: 10; /* Asegura que el botón esté por encima de otros elementos */
+    position: relative;
+    margin-top: 20px;
 }
 
 .btn-access:hover {
-    background-color: #006400; /* Color verde más claro al pasar el mouse */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada al pasar el mouse */
+    background-color: #006400;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 /* Estilos para el pie de página */
@@ -200,7 +202,6 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    position: relative;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -212,17 +213,17 @@ footer p {
 @media (max-width: 768px) {
     nav ul {
         display: flex;
-        flex-wrap: nowrap; /* Evita el ajuste de los elementos en una nueva línea */
-        justify-content: center; /* Centra los elementos de navegación */
-        overflow-x: auto; /* Añade scroll horizontal si es necesario */
-        padding: 0; /* Quita el padding */
-        margin: 0; /* Quita el margin */
+        flex-wrap: nowrap;
+        justify-content: center;
+        overflow-x: auto;
+        padding: 0;
+        margin: 0;
     }
 
     nav ul li {
         margin: 10px;
-        flex: 1; /* Permite que los elementos ocupen espacio equitativamente */
-        text-align: center; /* Centra el texto en los elementos de la lista */
+        flex: 1;
+        text-align: center;
     }
 
     nav ul li a {
@@ -240,18 +241,15 @@ footer p {
     .course {
         margin: 10px;
         padding: 20px;
-        padding-bottom: 120px; /* Espacio adicional para el botón en dispositivos móviles */
     }
 
     .btn-access {
-        bottom: 10px; /* Reduce el espacio desde la parte inferior */
-        right: 10px; /* Reduce el espacio desde el borde derecho */
-        padding: 8px 16px; /* Ajusta el padding */
-        font-size: 0.9em; /* Ajusta el tamaño de la fuente */
+        margin-top: 10px;
+        padding: 8px 16px;
+        font-size: 0.9em;
     }
 }
 
-/* Mejora la responsividad para dispositivos más pequeños */
 @media (max-width: 480px) {
     .hero h1 {
         font-size: 2em;
@@ -267,7 +265,6 @@ footer p {
 
     .course {
         padding: 15px;
-        padding-bottom: 150px; /* Espacio adicional para el botón en dispositivos muy pequeños */
     }
 
     .btn-access {
