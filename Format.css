@@ -30,7 +30,7 @@ header {
 }
 
 header .logo {
-    width: 75px; /* Ajusta el ancho del logo a 75px */
+    width: 50px; /* Ajusta el ancho del logo a 75px */
     height: auto; /* Mantiene la proporción original del logo */
     position: absolute; /* Posicionamos el logo */
     left: 20px; /* Lo situamos a la izquierda */
