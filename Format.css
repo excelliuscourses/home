@@ -169,7 +169,7 @@ nav ul li a:hover {
     width: 75px; /* Ajusta el tamaño del logo según sea necesario */
     height: auto; /* Mantiene la proporción del logo */
     vertical-align: middle; /* Alinea verticalmente el logo con el texto */
-    margin: 0 10px; /* Espacio entre los logos */
+    margin: 0 5px; /* Espacio entre los logos */
 }
 
 .contact p {
