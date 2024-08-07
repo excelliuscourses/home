@@ -30,6 +30,8 @@ header {
 header .logo {
     width: 100px;
     height: auto;
+    max-height: 100%; /* Asegura que el logo no sobresalga del header */
+    transform: scaleX(-1);
 }
 
 nav {
@@ -188,7 +190,8 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s, box-shadow 0.3s;
     position: relative;
-    margin-top: 20px;
+    bottom: 20px;
+    right: 20px    
 }
 
 .btn-access:hover {
