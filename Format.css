@@ -14,7 +14,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
 }
 
 .logo {
@@ -72,17 +71,14 @@ nav ul li a {
     border-radius: 8px;
 }
 
-.contact p a {
-    text-decoration: none;
-    color: #00796b;
+.social-links {
     display: flex;
-    align-items: center;
+    gap: 20px;
 }
 
 .social-icon {
     width: 24px;
     height: 24px;
-    margin-right: 8px;
 }
 
 footer {
@@ -90,7 +86,4 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
