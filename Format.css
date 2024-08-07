@@ -168,77 +168,99 @@ nav ul li a:hover {
 }
 
 .social-logo {
-    width: 75px; /* Ajusta el tamaño del logo según sea necesario */
-    height: auto; /* Mantiene la proporción del logo */
-    vertical-align: middle; /* Alinea verticalmente el logo con el texto */
-    margin: 0 5px; /* Espacio entre los logos */
-}
-
-.contact p {
-    margin: 0;
-}
-
-/* Estilos para los botones de acceso a los cursos */
-.btn-access {
-    display: inline-block;
-    background-color: #004d00; /* Verde oscuro */
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 20px; /* Padding para separar el texto del borde del botón */
-    border-radius: 5px; /* Bordes redondeados para un estilo más moderno */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para hacer el botón más visible */
-    transition: background-color 0.3s, box-shadow 0.3s;
-    position: absolute;
-    bottom: 20px; /* Espacio desde la parte inferior */
-    right: 20px; /* Espacio desde el borde derecho */
-}
-
-.btn-access:hover {
-    background-color: #006400; /* Color verde más claro al pasar el mouse */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada al pasar el mouse */
-}
-
-.course {
-    position: relative; /* Asegura que el botón se posicione relativamente al contenedor */
+    width: 75px; /* Ajusta el ancho de los íconos sociales */
+    height: auto; /* Mantiene la proporción original de los íconos */
+    margin: 0 10px;
 }
 
 /* Estilos para el pie de página */
 footer {
     background-color: #004d00;
     color: #fff;
-    padding: 20px 0;
     text-align: center;
-    position: relative;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
+/* Media Queries */
 
-footer p {
-    margin: 0;
-}
+/* Estilos para dispositivos móviles */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2em;
+    }
 
-/* Responsividad */
-@media (max-width: 768px) {
-    nav ul {
+    .hero p {
+        font-size: 1em;
+    }
+
+    .header .logo {
+        width: 80px;
+    }
+
+    .nav ul {
         flex-direction: column;
         align-items: center;
     }
 
-    nav ul li {
+    .nav ul li {
         margin: 10px 0;
     }
 
-    .hero {
-        padding: 40px 20px;
-    }
-
-    .courses h2, .contact h2 {
-        font-size: 1.8em;
-    }
-
-    .course {
+    .courses .course {
         margin: 10px;
+        padding: 15px;
+    }
+
+    .btn-access {
+        font-size: 0.9em;
+        padding: 8px 16px;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+/* Estilos para tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    .header .logo {
+        width: 100px;
+    }
+
+    .courses .course {
+        margin: 15px;
         padding: 20px;
     }
+
+    .btn-access {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
+
+/* Estilos generales para el botón de acceso */
+.btn-access {
+    display: inline-block;
+    background-color: #004d00;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.btn-access:hover {
+    background-color: #003300;
+    transform: scale(1.05);
 }
