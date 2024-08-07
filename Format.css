@@ -1,205 +1,96 @@
-/* styles.css */
-
-/* Estilos globales */
 body {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
 }
 
-/* Estilos para el contenedor general */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Estilos para el encabezado */
 header {
-    background-color: #004d00; /* Verde oscuro */
-    color: #fff;
-    padding: 10px 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #00796b;
+    color: white;
+    padding: 10px 0;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-between; /* Espacio entre el logo y la navegación */
-    height: 100px; /* Ajustamos la altura del encabezado */
     position: relative;
 }
 
-header .logo {
-    width: 110px; /* Ajusta el ancho del logo a 75px */
-    height: auto; /* Mantiene la proporción original del logo */
-    max-height: 100%; /* Asegura que el logo no sobresalga del header */
-    transform: scaleX(-1); /* Invierte el logo horizontalmente */
-}
-
-nav {
-    flex: 1;
-    display: flex;
-    justify-content: right; /* Centra los elementos de navegación */
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
+.logo {
+    width: 75px;
     margin-left: 20px;
 }
 
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
 nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: color 0.3s, transform 0.3s;
+    font-size: 16px;
 }
 
-nav ul li a:hover {
-    color: #a9d1ff;
-    transform: translateY(-3px);
-}
-
-/* Estilos para la sección hero */
 .hero {
     background: url('financial-charts-table-with-laptop.jpg') no-repeat center center/cover;
-    color: #fff;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 60px 20px;
-    position: relative;
-    height: 25vh; /* Ajustamos la altura a un cuarto de la pantalla */
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Añadimos un overlay para mejor legibilidad */
-    z-index: 0;
+    color: white;
 }
 
 .hero .container {
-    position: relative;
-    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
 }
 
-.hero h1 {
-    font-size: 3em;
-    margin: 0;
-    z-index: 1;
-}
-
-.hero p {
-    font-size: 1.2em;
-    z-index: 1;
-}
-
-/* Estilos para las secciones de cursos */
 .courses {
-    background-color: #f4f4f4;
-    padding: 60px 20px;
-}
-
-.courses h2 {
-    text-align: center;
-    color: #004d00;
-    margin-bottom: 40px;
-    font-size: 2.5em;
+    padding: 20px;
+    background: white;
+    margin: 20px;
+    border-radius: 8px;
 }
 
 .course {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    margin: 20px auto;
-    max-width: 800px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.course:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-}
-
-.course h3 {
-    color: #004d00;
-    margin-top: 0;
-}
-
-.course ul {
-    padding-left: 20px;
-}
-
-/* Estilos para la sección de contacto */
-.contact {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.contact h2 {
-    color: #004d00;
     margin-bottom: 20px;
-    font-size: 2em;
 }
 
-.contact a {
-    color: #004d00;
+.contact {
+    padding: 20px;
+    background: white;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.contact p a {
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s, text-shadow 0.3s;
+    color: #00796b;
+    display: flex;
+    align-items: center;
 }
 
-.contact a:hover {
-    text-decoration: underline;
-    color: #a9d1ff;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.social-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
 }
 
-/* Estilos para el pie de página */
 footer {
-    background-color: #004d00;
-    color: #fff;
-    padding: 20px 0;
+    background-color: #00796b;
+    color: white;
     text-align: center;
-    position: relative;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Responsividad */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    .hero {
-        padding: 40px 20px;
-    }
-
-    .courses h2, .contact h2 {
-        font-size: 1.8em;
-    }
-
-    .course {
-        margin: 10px;
-        padding: 20px;
-    }
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
