@@ -240,6 +240,7 @@ footer p {
     .course {
         margin: 10px;
         padding: 20px;
+        padding-bottom: 120px; /* Espacio adicional para el botón en dispositivos móviles */
     }
 
     .btn-access {
@@ -266,6 +267,7 @@ footer p {
 
     .course {
         padding: 15px;
+        padding-bottom: 150px; /* Espacio adicional para el botón en dispositivos muy pequeños */
     }
 
     .btn-access {
