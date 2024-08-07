@@ -39,7 +39,7 @@ header .logo {
 nav {
     flex: 1;
     display: flex;
-    justify-content: center; /* Centra los elementos de navegación */
+    justify-content: right; /* Centra los elementos de navegación */
 }
 
 nav ul {
