@@ -27,7 +27,7 @@ header {
     align-items: center;
     justify-content: space-between; /* Ajustamos el espaciado */
     position: relative;
-    height: 80px; /* Ajustamos la altura del encabezado */
+    height: 10px; /* Ajustamos la altura del encabezado */
 }
 
 header .logo {
