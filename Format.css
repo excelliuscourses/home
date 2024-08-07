@@ -176,6 +176,31 @@ nav ul li a:hover {
     margin: 0;
 }
 
+.btn-access {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #004d00; /* Verde oscuro */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.btn-access:hover {
+    background-color: #003300; /* Verde más oscuro */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3px);
+}
+
+.course {
+    position: relative; /* Asegura que el botón se posicione relativamente al contenedor */
+}
+
 
 /* Estilos para el pie de página */
 footer {
