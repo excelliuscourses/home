@@ -166,7 +166,7 @@ nav ul li a:hover {
 }
 
 .social-logo {
-    width: 24px; /* Ajusta el tamaño del logo según sea necesario */
+    width: 45px; /* Ajusta el tamaño del logo según sea necesario */
     height: auto; /* Mantiene la proporción del logo */
     vertical-align: middle; /* Alinea verticalmente el logo con el texto */
     margin: 0 10px; /* Espacio entre los logos */
