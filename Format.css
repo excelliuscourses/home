@@ -117,6 +117,7 @@ nav ul li a:hover {
 }
 
 .course {
+    position: relative;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -124,6 +125,7 @@ nav ul li a:hover {
     margin: 20px auto;
     max-width: 800px;
     transition: transform 0.3s, box-shadow 0.3s;
+    padding-bottom: 80px;
 }
 
 .course:hover {
