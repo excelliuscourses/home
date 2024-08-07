@@ -67,11 +67,17 @@ nav ul li a:hover {
 
 /* Estilos para la sección hero */
 .hero {
-    background: url('hero-background.jpg') no-repeat center center/cover;
+    background: url('financial-charts-table-with-laptop.jpg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
-    padding: 120px 20px;
+    padding: 60px 20px; /* Reduce el padding para que la sección no sea tan alta */
     position: relative;
+    height: auto; /* Ajusta la altura automáticamente */
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
 }
 
 .hero::before {
@@ -81,29 +87,16 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5); /* Oscurece la imagen de fondo */
     z-index: 0;
 }
 
-.hero h1 {
-    font-size: 3em;
-    margin: 0;
+.hero h1, .hero p {
     z-index: 1;
+    position: relative;
 }
 
-.hero p {
-    font-size: 1.2em;
-    z-index: 1;
-}
-
-.hero-image {
-    width: 30%; /* Reduce el ancho de la imagen */
-    height: auto; /* Mantiene la proporción de la imagen */
-    margin-top: 10px; /* Margen superior muy fino */
-    border-radius: 4px; /* Bordes redondeados más sutiles */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
-    z-index: 1;
-}
+/* Remueve la clase .hero-image ya que no se necesita para este ajuste */
 
 /* Estilos para las secciones de cursos */
 .courses {
