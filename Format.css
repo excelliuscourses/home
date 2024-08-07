@@ -67,13 +67,12 @@ nav ul li a:hover {
 
 /* Estilos para la sección hero */
 .hero {
-    background: url('financial-charts-table-with-laptop.jpg') no-repeat center center;
-    background-size: 400% auto; /* Ajustamos el tamaño de la imagen a 1/4 de su tamaño original */
+    background: url('financial-charts-table-with-laptop.jpg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
-    padding: 120px 20px;
+    padding: 60px 20px;
     position: relative;
-    height: 100vh; /* Ajustamos la altura para ocupar toda la pantalla */
+    height: 25vh; /* Ajustamos la altura a un cuarto de la pantalla */
 }
 
 .hero::before {
@@ -191,7 +190,7 @@ footer p {
     }
 
     .hero {
-        padding: 80px 20px;
+        padding: 40px 20px;
     }
 
     .courses h2, .contact h2 {
