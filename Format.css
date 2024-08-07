@@ -31,7 +31,7 @@ header {
 }
 
 header .logo {
-    width: 110px; /* Ajusta el ancho del logo a 75px */
+    width: 75px; /* Ajusta el ancho del logo a 75px */
     height: auto; /* Mantiene la proporción original del logo */
     max-height: 100%; /* Asegura que el logo no sobresalga del header */
 }
@@ -67,7 +67,8 @@ nav ul li a:hover {
 
 /* Estilos para la sección hero */
 .hero {
-    background: url('financial-charts-table-with-laptop.jpg') no-repeat center center/cover;
+    background: url('financial-charts-table-with-laptop.jpg') no-repeat center center;
+    background-size: 400% auto; /* Ajustamos el tamaño de la imagen a 1/4 de su tamaño original */
     color: #fff;
     text-align: center;
     padding: 120px 20px;
