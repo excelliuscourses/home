@@ -31,7 +31,7 @@ header {
 }
 
 header .logo {
-    width: 75px; /* Ajusta el ancho del logo a 75px */
+    width: 110px; /* Ajusta el ancho del logo a 75px */
     height: auto; /* Mantiene la proporción original del logo */
     max-height: 100%; /* Asegura que el logo no sobresalga del header */
     transform: scaleX(-1);
@@ -40,7 +40,7 @@ header .logo {
 nav {
     flex: 1;
     display: flex;
-    justify-content: center; /* Centra los elementos de navegación */
+    justify-content: right; /* Centra los elementos de navegación */
 }
 
 nav ul {
@@ -165,6 +165,18 @@ nav ul li a:hover {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.social-logo {
+    width: 24px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto; /* Mantiene la proporción del logo */
+    vertical-align: middle; /* Alinea verticalmente el logo con el texto */
+    margin: 0 10px; /* Espacio entre los logos */
+}
+
+.contact p {
+    margin: 0;
+}
+
+
 /* Estilos para el pie de página */
 footer {
     background-color: #004d00;
@@ -174,6 +186,7 @@ footer {
     position: relative;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 footer p {
     margin: 0;
