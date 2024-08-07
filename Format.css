@@ -31,7 +31,7 @@ header {
 }
 
 header .logo {
-    width: 75px; /* Ajusta el ancho del logo a 75px */
+    width: 110px; /* Ajusta el ancho del logo a 75px */
     height: auto; /* Mantiene la proporción original del logo */
     max-height: 100%; /* Asegura que el logo no sobresalga del header */
 }
@@ -97,11 +97,11 @@ nav ul li a:hover {
 }
 
 .hero-image {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%; /* Reduce el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-top: 10px; /* Margen superior muy fino */
+    border-radius: 4px; /* Bordes redondeados más sutiles */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
     z-index: 1;
 }
 
@@ -203,5 +203,10 @@ footer p {
     .course {
         margin: 10px;
         padding: 20px;
+    }
+
+    .hero-image {
+        width: 50%; /* Ajusta el ancho de la imagen para pantallas más pequeñas */
+        margin-top: 10px;
     }
 }
