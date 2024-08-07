@@ -21,23 +21,25 @@ body {
 header {
     background-color: #004d00; /* Verde oscuro */
     color: #fff;
-    padding: 20px 0;
+    padding: 10px 20px; /* Añadimos padding para evitar superposición */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
-    justify-content: center; /* Centramos el contenido */
+    justify-content: space-between; /* Ajustamos el espaciado */
     position: relative;
+    height: 80px; /* Ajustamos la altura del encabezado */
 }
 
 header .logo {
-    width: 50px; /* Ajusta el ancho del logo a 75px */
+    width: 75px; /* Ajusta el ancho del logo a 75px */
     height: auto; /* Mantiene la proporción original del logo */
-    position: absolute; /* Posicionamos el logo */
-    left: 20px; /* Lo situamos a la izquierda */
+    margin-right: 20px; /* Espaciado desde el logo */
 }
 
 nav {
+    flex: 1; /* Hace que el nav ocupe el espacio disponible */
     display: flex;
+    justify-content: center; /* Centra los elementos de navegación */
 }
 
 nav ul {
