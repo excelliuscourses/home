@@ -15,6 +15,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    text-align: center;
 }
 
 /* Estilos para el encabezado */
@@ -31,7 +32,7 @@ header {
 }
 
 header .logo {
-    width: 110px; /* Ajusta el ancho del logo a 75px */
+    width: 75px; /* Ajusta el ancho del logo a 75px */
     height: auto; /* Mantiene la proporción original del logo */
     max-height: 100%; /* Asegura que el logo no sobresalga del header */
 }
@@ -85,6 +86,11 @@ nav ul li a:hover {
     z-index: 0;
 }
 
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
 .hero h1 {
     font-size: 3em;
     margin: 0;
@@ -94,6 +100,14 @@ nav ul li a:hover {
 .hero p {
     font-size: 1.2em;
     z-index: 1;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+    border-radius: 10px; /* Borde redondeado para una apariencia más suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
 /* Estilos para las secciones de cursos */
